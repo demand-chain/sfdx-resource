@@ -1,0 +1,75 @@
+{
+  "name": "sfdx-bundle",
+  "description": "An SFDX plugin for working with static resources and resource bundles",
+  "version": "0.0.1",
+  "author": "James Loghry @dancinllama",
+  "bugs": "https://github.com/dancinllama/sfdx-bundle/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/errors": "^1",
+    "@rollup/plugin-alias": "^3.1.1",
+    "@salesforce/command": "^2",
+    "@salesforce/core": "^2.14.0",
+    "extract-zip": "^2.0.1",
+    "file-saver": "^2.0.2",
+    "join": "^3.0.0",
+    "jszip": "^3.5.0",
+    "request-promise-native": "^1.0.9",
+    "tslib": "^1",
+    "unzip-stream": "^0.3.1",
+    "unzipper": "^0.10.11",
+    "zip-dir": "^1.0.2"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/plugin-help": "^2",
+    "@oclif/test": "^1",
+    "@salesforce/dev-config": "1.4.1",
+    "@types/chai": "^4",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "chai": "^4",
+    "globby": "^8",
+    "mocha": "^5",
+    "nyc": "^14",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8",
+    "tslint": "^5"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/lib",
+    "/messages",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/dancinllama/sfdx-bundle",
+  "keywords": [
+    "sfdx-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "sfdx",
+    "topics": {
+      "hello": {
+        "description": "Commands to say hello."
+      }
+    },
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "dancinllama/sfdx-bundle",
+  "scripts": {
+    "lint": "tslint --project . --config tslint.json --format stylish",
+    "postpack": "rimraf oclif.manifest.json",
+    "posttest": "tslint -p test -t stylish",
+    "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}

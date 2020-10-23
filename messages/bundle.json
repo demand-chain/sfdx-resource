@@ -1,0 +1,7 @@
+{
+    "commandDescription": "Bundles / zips the resource directory in the bundles directory at the root of an SFDX project and creates / updates the static resource.",
+    "arg0" : "The name of the directory to bundle.  This directory must exist in ./bundles",
+    "nameFlagDescription" : "(Optional). If specified, determines the name of the static resource.  If not specified, name is defaulted to the name of the unbundled directory.",
+    "descriptionFlagDescription" : "(Optional). If specified, determines the description of the static resource.  If not specified, defaults to the name of the unbundled directory.",
+    "privateFlagDescription" : "If set to true, then the static resource is set to Private Cache Control.  Public, otherwise."
+}

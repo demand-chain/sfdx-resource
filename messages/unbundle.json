@@ -1,0 +1,4 @@
+{
+  "commandDescription": "Unzips / unbundles a static resource into a bundles directory at the root of an SFDX project.",
+  "arg0" : "The name of the static resource to unzip / unbundle.  Omit .resource from the name.  For a static resource named Example.resource, use 'Example'"
+}
