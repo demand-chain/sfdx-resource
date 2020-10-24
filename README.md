@@ -1,16 +1,16 @@
-sfdx-bundle
+sfdx-resource
 ===========
 
 An SFDX plugin for working with static resources and resource bundles
 
-[![Version](https://img.shields.io/npm/v/sfdx-bundle.svg)](https://npmjs.org/package/sfdx-bundle)
-[![CircleCI](https://circleci.com/gh/dancinllama/sfdx-bundle/tree/master.svg?style=shield)](https://circleci.com/gh/dancinllama/sfdx-bundle/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/dancinllama/sfdx-bundle?branch=master&svg=true)](https://ci.appveyor.com/project/heroku/sfdx-bundle/branch/master)
-[![Codecov](https://codecov.io/gh/dancinllama/sfdx-bundle/branch/master/graph/badge.svg)](https://codecov.io/gh/dancinllama/sfdx-bundle)
-[![Greenkeeper](https://badges.greenkeeper.io/dancinllama/sfdx-bundle.svg)](https://greenkeeper.io/)
-[![Known Vulnerabilities](https://snyk.io/test/github/dancinllama/sfdx-bundle/badge.svg)](https://snyk.io/test/github/dancinllama/sfdx-bundle)
-[![Downloads/week](https://img.shields.io/npm/dw/sfdx-bundle.svg)](https://npmjs.org/package/sfdx-bundle)
-[![License](https://img.shields.io/npm/l/sfdx-bundle.svg)](https://github.com/dancinllama/sfdx-bundle/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/sfdx-respource.svg)](https://npmjs.org/package/sfdx-resource)
+[![CircleCI](https://circleci.com/gh/dancinllama/sfdx-resource/tree/master.svg?style=shield)](https://circleci.com/gh/dancinllama/sfdx-resource/tree/master)
+[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/dancinllama/sfdx-resource?branch=master&svg=true)](https://ci.appveyor.com/project/heroku/sfdx-resource/branch/master)
+[![Codecov](https://codecov.io/gh/dancinllama/sfdx-resource/branch/master/graph/badge.svg)](https://codecov.io/gh/dancinllama/sfdx-bundle)
+[![Greenkeeper](https://badges.greenkeeper.io/dancinllama/sfdx-resource.svg)](https://greenkeeper.io/)
+[![Known Vulnerabilities](https://snyk.io/test/github/dancinllama/sfdx-resource/badge.svg)](https://snyk.io/test/github/dancinllama/sfdx-resource)
+[![Downloads/week](https://img.shields.io/npm/dw/sfdx-resource.svg)](https://npmjs.org/package/sfdx-resource)
+[![License](https://img.shields.io/npm/l/sfdx-resource.svg)](https://github.com/dancinllama/sfdx-resource/blob/master/package.json)
 
 <!-- toc -->
 * [Debugging your plugin](#debugging-your-plugin)
@@ -18,11 +18,11 @@ An SFDX plugin for working with static resources and resource bundles
 <!-- install -->
 <!-- usage -->
 ```sh-session
-$ npm install -g sfdx-bundle
+$ npm install -g sfdx-resource
 $ sfdx COMMAND
 running command...
 $ sfdx (-v|--version|version)
-sfdx-bundle/0.0.1 win32-x64 node-v10.15.1
+sfdx-rsource/0.0.1 win32-x64 node-v10.15.1
 $ sfdx --help [COMMAND]
 USAGE
   $ sfdx COMMAND
