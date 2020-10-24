@@ -11,6 +11,7 @@
     "@rollup/plugin-alias": "^3.1.1",
     "@salesforce/command": "^2",
     "@salesforce/core": "^2.14.0",
+    "@salesforce/ts-types": "^1.4.3",
     "extract-zip": "^2.0.1",
     "file-saver": "^2.0.2",
     "join": "^3.0.0",
@@ -55,9 +56,10 @@
     "commands": "./lib/commands",
     "bin": "sfdx",
     "topics": {
-      "hello": {
-        "description": "Commands to say hello."
-      }
+        "resource" : {
+            "name" : "roottopic",
+            "description" : "Commands for bundling static resources"
+        }
     },
     "devPlugins": [
       "@oclif/plugin-help"
@@ -69,7 +71,7 @@
     "postpack": "rimraf oclif.manifest.json",
     "posttest": "tslint -p test -t stylish",
     "prepack": "rimraf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"
   }
 }
