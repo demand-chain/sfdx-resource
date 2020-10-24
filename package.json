@@ -1,9 +1,9 @@
 {
-  "name": "sfdx-bundle",
+  "name": "sfdx-resource",
   "description": "An SFDX plugin for working with static resources and resource bundles",
   "version": "0.0.1",
   "author": "James Loghry @dancinllama",
-  "bugs": "https://github.com/dancinllama/sfdx-bundle/issues",
+  "bugs": "https://github.com/demand-chain/sfdx-resource/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -47,7 +47,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/dancinllama/sfdx-bundle",
+  "homepage": "https://github.com/demand-chain/sfdx-resource",
   "keywords": [
     "sfdx-plugin"
   ],
@@ -65,7 +65,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "dancinllama/sfdx-bundle",
+  "repository": "demand-chain/sfdx-resource",
   "scripts": {
     "lint": "tslint --project . --config tslint.json --format stylish",
     "postpack": "rimraf oclif.manifest.json",

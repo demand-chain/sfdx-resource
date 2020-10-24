@@ -11,7 +11,7 @@ Messages.importMessagesDirectory(__dirname);
 
 // Load the specific messages for this file. Messages from @salesforce/command, @salesforce/core,
 // or any library that is using the messages framework can also be loaded this way.
-const messages = Messages.loadMessages('sfdx-bundle', 'bundle');
+const messages = Messages.loadMessages('sfdx-resource', 'bundle');
 
 export default class Bundle extends SfdxCommand {
 

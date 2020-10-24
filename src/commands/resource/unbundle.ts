@@ -7,7 +7,7 @@ import fs = require('fs');
 
 // Initialize Messages with the current plugin directory
 Messages.importMessagesDirectory(__dirname);
-const messages = Messages.loadMessages('sfdx-bundle','unbundle');
+const messages = Messages.loadMessages('sfdx-resource','unbundle');
 
 export default class Unbundle extends SfdxCommand {
 
