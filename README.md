@@ -35,7 +35,6 @@ For extracting a static resource in a SFDX project, so that you can modify the c
 $ sfdx resource:unbundle <resourcename>
 
 $ sfdx resource:unbundle --help
-...
 ```
 <!-- usagestop -->
 <!-- commands -->
